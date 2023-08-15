@@ -1,0 +1,24 @@
+.nav-link {
+  color: #111111;
+  border-radius: 2rem;
+}
+
+.nav-link:hover {
+  color: white;
+  background-color: #1b5b31;
+  border-radius: 2rem;
+}
+
+.nav-link.show:hover {
+  color: white;
+  background-color: #1b5b31;
+}
+
+.dropdown-item:hover {
+  color: white;
+  background-color: #1b5b31;
+}
+
+.dropdown {
+  height: 24px;
+}
