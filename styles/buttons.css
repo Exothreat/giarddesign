@@ -4,15 +4,25 @@
   padding: 0 20px;
 }
 
-.btn-success {
+.btn-secondary {
   color: white;
   background-color: #1b5b31;
 }
 
-.btn-success:hover {
+.btn-secondary:hover {
   background-color: #237640;
 }
 
 .btn-light {
+  color: #1b5b31;
+  background-color: #f5f0ec;
+}
+
+.btn-outline-light {
+  color: #f5f0ec;
+}
+
+.btn-outline-light:hover {
+  color: #1b5b31;
   background-color: #f5f0ec;
 }
