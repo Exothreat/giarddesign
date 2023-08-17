@@ -1,6 +1,7 @@
 .btn {
   height: 50px;
   border-radius: 2rem;
+  padding: 0 20px;
 }
 
 .btn-success {
@@ -10,4 +11,8 @@
 
 .btn-success:hover {
   background-color: #237640;
+}
+
+.btn-light {
+  background-color: #f5f0ec;
 }
