@@ -2,6 +2,10 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.bg-primary {
+  background-color: #dcc1ab !important;
+}
+
 .bg-secondary {
   color: #f5f0ec;
   background-color: #1b5b31 !important;

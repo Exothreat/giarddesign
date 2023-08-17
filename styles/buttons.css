@@ -10,12 +10,26 @@
 }
 
 .btn-secondary:hover {
-  background-color: #237640;
+  background-color: #29894b;
+}
+
+.btn-outline-secondary {
+  color: #1b5b31;
+}
+
+.btn-outline-secondary:hover {
+  color: #f5f0ec;
+  background-color: #1b5b31;
 }
 
 .btn-light {
   color: #1b5b31;
   background-color: #f5f0ec;
+}
+
+.btn-light:hover {
+  color: #1b5b31;
+  background-color: #bbb9b8;
 }
 
 .btn-outline-light {

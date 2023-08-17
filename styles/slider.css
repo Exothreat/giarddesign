@@ -1,0 +1,19 @@
+.slider {
+  width: 192px;
+  height: 96px;
+  background-color: #f5f0ec;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.slider__arrow {
+  font-size: 48px;
+  color: #111;
+}
+
+.slider__arrow:hover {
+  color: #dcc1ab;
+  background-color: #1b5b31;
+  border-radius: 4rem;
+}

@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/contact.css" />
     <link rel="stylesheet" href="styles/buttons.css" />
+    <link rel="stylesheet" href="styles/slider.css" />
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
@@ -103,45 +104,77 @@
       </div>
     </header>
     <section id="intro">
-      <div class="container-fluid bg-secondary">
-        <div class="row align-items-center justify-content-between">
-          <div
-            class="col-lg-6 bg-image px-0"
-            style="
-              background-image: url(/images/about-bg.jpg);
-              height: 720px;
-              background-size: cover;
-            "
-          ></div>
+      <div class="container-fluid bg-primary">
+        <div class="row align-items-center">
           <div class="col-lg-6" style="padding: 64px">
             <div
-              class="d-flex flex-column justify-content-between"
-              style="padding-left: 96px; max-width: 596px; min-height: 450px"
+              class="d-flex flex-column justify-content-between mx-auto"
+              style="max-width: 500px; min-height: 448px"
             >
-              <div>
-                <nav style="font-size: 12px">O firmie</nav>
-              </div>
-              <div>
-                <h2 style="font-size: 48px">Tworzymy z pasją</h2>
+              <div class="fw-bold">
+                <h1
+                  style="font-size: 60px; font-family: 'Montserrat', sans-serif"
+                >
+                  Nowoczesna aranżacja Twojego ogrodu
+                </h1>
               </div>
               <div>
                 <span class="about__description">
-                  Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą
-                  wykwalifikowani projektanci oraz architekci, których zadaniem
-                  jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza
-                  specjalizacja to przestrzenie nowoczesne, które charakteryzuje
-                  minimalizm, geometria i elegancka prostota. Tworzymy ogrody
-                  małoobsługowe, dostosowane do współczesnego trybu życia.
+                  Marka GiardDesign to wieloletnie doświadczenie i wysoka
+                  estetyka realizacji. Oferujemy kompleksowy zakres usług z
+                  indywidualnym podejściem do każdego projektu.
                 </span>
               </div>
-              <div style="margin-top: 30px">
-                <a href="https://www.instagram.com">
-                  <button type="button" class="btn btn-outline-light">
-                    Poznaj nas bliżej
-                    <i class="bi bi-arrow-right"></i>
-                  </button>
-                </a>
+              <div class="d-flex justify-content-between">
+                <div style="margin-top: 30px">
+                  <a href="#realizacje">
+                    <button type="button" class="btn btn-secondary">
+                      Skontaktuj się z nami
+                    </button>
+                  </a>
+                </div>
+                <div style="margin-top: 30px">
+                  <a href="#realizacje">
+                    <button type="button" class="btn btn-outline-secondary">
+                      Zobacz nasze realizacje
+                      <i class="bi bi-arrow-down"></i>
+                    </button>
+                  </a>
+                </div>
               </div>
+            </div>
+          </div>
+          <div id="carouselSlide" class="col-lg-6 px-0 carousel slide text-end">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/main-bg.jpg" alt="" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/main-bg.jpg" alt="" />
+              </div>
+              <div class="carousel-item">
+                <img src="images/main-bg.jpg" alt="" />
+              </div>
+            </div>
+            <div class="slider float-end d-flex align-items-center text-center">
+              <a
+                role="button"
+                data-bs-target="#carouselSlide"
+                data-bs-slide="prev"
+                href=""
+                class="slider__arrow flex-fill"
+              >
+                <i class="bi bi-arrow-left-short"></i>
+              </a>
+              <a
+                role="button"
+                data-bs-target="#carouselSlide"
+                data-bs-slide="next"
+                href=""
+                class="slider__arrow flex-fill"
+              >
+                <i class="bi bi-arrow-right-short"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -150,7 +183,7 @@
     <section id="oferta"></section>
     <section id="about">
       <div class="container-fluid bg-secondary">
-        <div class="row align-items-center justify-content-between">
+        <div class="row align-items-center">
           <div
             class="col-lg-6 bg-image px-0"
             style="
@@ -161,8 +194,8 @@
           ></div>
           <div class="col-lg-6" style="padding: 64px">
             <div
-              class="d-flex flex-column justify-content-between"
-              style="padding-left: 96px; max-width: 596px; min-height: 450px"
+              class="d-flex flex-column justify-content-between mx-auto"
+              style="max-width: 500px; min-height: 450px"
             >
               <div>
                 <nav style="font-size: 12px">O firmie</nav>
