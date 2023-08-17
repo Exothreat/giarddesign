@@ -40,3 +40,14 @@
   color: #1b5b31;
   background-color: #f5f0ec;
 }
+
+.btn-link {
+  color: #1b5b31;
+  padding: 0;
+  transition: 0.3s;
+}
+
+.btn-link:hover {
+  color: #29894b;
+  transform: scale(1.1);
+}

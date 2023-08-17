@@ -10,3 +10,7 @@ body {
   color: #f5f0ec;
   background-color: #1b5b31 !important;
 }
+
+.bg-success {
+  background-color: #f5f0ec !important;
+}

@@ -1,0 +1,30 @@
+.card {
+  width: 378px;
+  padding: 48px 40px;
+  border-radius: 28px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-icon {
+  width: 44px;
+  height: 44px;
+  margin-bottom: 32px;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 28px;
+}
+
+.card-text {
+  font-size: 14px;
+  margin-bottom: 40px;
+}
