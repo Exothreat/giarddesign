@@ -9,12 +9,6 @@
 
 .search__container.active {
   width: 320px;
-  padding: 0;
-  margin: 0;
-}
-
-.search.active {
-  cursor: copy;
 }
 
 .search {
@@ -24,6 +18,14 @@
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  border-radius: 2rem;
+  transition: 0.3s;
+}
+
+.search:hover {
+  color: white;
+  background-color: #1b5b31;
+  border-radius: 2rem;
 }
 
 .search__input {

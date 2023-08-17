@@ -1,3 +1,8 @@
 body {
   font-family: "Inter", sans-serif;
 }
+
+.bg-success {
+  color: white;
+  background-color: #1b5b31 !important;
+}

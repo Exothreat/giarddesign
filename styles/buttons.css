@@ -1,0 +1,13 @@
+.btn {
+  height: 50px;
+  border-radius: 2rem;
+}
+
+.btn-success {
+  color: white;
+  background-color: #1b5b31;
+}
+
+.btn-success:hover {
+  background-color: #237640;
+}
