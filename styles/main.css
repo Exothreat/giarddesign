@@ -14,3 +14,19 @@ body {
 .bg-success {
   background-color: #f5f0ec !important;
 }
+
+.offer {
+  padding: 0 200px;
+}
+
+@media (max-width: 992px) {
+  .offer {
+    padding: 30px;
+  }
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 737px;
+  object-position: right;
+}
