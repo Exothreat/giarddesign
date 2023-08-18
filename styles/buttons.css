@@ -5,7 +5,7 @@
 }
 
 .btn-secondary {
-  color: white;
+  color: #f5f0ec;
   background-color: #1b5b31;
 }
 
@@ -20,6 +20,10 @@
 .btn-outline-secondary:hover {
   color: #f5f0ec;
   background-color: #1b5b31;
+}
+
+.btn-outline-secondary:active {
+  background-color: #29894b !important;
 }
 
 .btn-light {
