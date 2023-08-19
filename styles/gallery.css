@@ -1,0 +1,9 @@
+.grid {
+  margin: auto;
+}
+
+.grid-item {
+  max-width: 1200px;
+  list-style: none;
+  margin-bottom: 42px;
+}

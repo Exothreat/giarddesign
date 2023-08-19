@@ -15,13 +15,13 @@ body {
   background-color: #f5f0ec !important;
 }
 
-.offer {
+.title {
   padding: 0 200px;
 }
 
 @media (max-width: 992px) {
-  .offer {
-    padding: 30px;
+  .title {
+    padding: 20px;
   }
 }
 
