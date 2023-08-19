@@ -1,16 +1,21 @@
 .btn {
   height: 50px;
   border-radius: 2rem;
-  padding: 0 20px;
+  padding: 0 15px;
 }
 
 .btn-secondary {
   color: #f5f0ec;
   background-color: #1b5b31;
+  border: none;
 }
 
 .btn-secondary:hover {
   background-color: #29894b;
+}
+
+.btn-secondary:active {
+  background-color: #1b5b31;
 }
 
 .btn-outline-secondary {

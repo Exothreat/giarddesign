@@ -15,6 +15,11 @@ body {
   background-color: #f5f0ec !important;
 }
 
+.bg-dark {
+  background-color: #111 !important;
+  color: #f5f0ec;
+}
+
 .title {
   padding: 0 200px;
 }

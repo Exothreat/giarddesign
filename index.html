@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="styles/search.css" />
     <link rel="stylesheet" href="styles/navigation.css" />
     <link rel="stylesheet" href="styles/main.css" />
-    <link rel="stylesheet" href="styles/footer.css" />
     <link rel="stylesheet" href="styles/buttons.css" />
     <link rel="stylesheet" href="styles/slider.css" />
     <link rel="stylesheet" href="styles/cards.css" />
@@ -43,9 +42,7 @@
         <nav class="navbar navbar-expand-lg sticky-top">
           <div class="container-fluid">
             <a href="#header" class="navbar-brand">
-              <h1>
-                <img src="images/logo.svg" alt="Logo firmy giarddesign" />
-              </h1>
+              <img src="images/logo.svg" alt="Logo firmy giarddesign" />
             </a>
             <button
               type="button"
@@ -125,20 +122,19 @@
                   z&nbsp;indywidualnym podejściem do każdego projektu.
                 </span>
               </div>
-              <div class="d-flex justify-content-between">
+              <div style="margin-top: 30px">
                 <div class="row">
-                  <div class="col" style="margin-top: 30px">
+                  <div class="col">
                     <a href="#realizacje">
                       <button type="button" class="btn btn-secondary">
                         Skontaktuj się z&nbsp;nami
                       </button>
                     </a>
                   </div>
-                  <div class="col" style="margin-top: 30px">
+                  <div class="col">
                     <a href="#realizacje">
                       <button type="button" class="btn btn-outline-secondary">
-                        Zobacz nasze realizacje
-                        <i class="bi bi-arrow-down"></i>
+                        Zobacz nasze realizacje <i class="bi bi-arrow-down"></i>
                       </button>
                     </a>
                   </div>
@@ -430,8 +426,54 @@
         </div>
       </div>
     </section>
-    <footer id="footer" class="footer">
-      <div class="container"></div>
+    <footer id="footer" class="bg-dark">
+      <div
+        class="container d-flex flex-column flex-wrap justify-content-between"
+        style="max-width: 1040px; padding: 80px 0"
+      >
+        <div
+          class="d-flex flex-column flex-wrap justify-content-between"
+          style="height: 195px; margin-bottom: 120px"
+        >
+          <div
+            class="d-flex flex-wrap justify-content-between align-items-center"
+          >
+            <a href="#header">
+              <img src="images/logo-light.svg" alt="Logo firmy giarddesign" />
+            </a>
+            <div class="d-flex flex-wrap align-items-center gap-4">
+              <span>Daj znać, co możemy dla Ciebie zrobić!</span>
+              <button type="button" class="btn btn-secondary">
+                Skontaktuj się z nami
+              </button>
+            </div>
+          </div>
+          <div class="line" style="border-bottom: 1px solid #f5f0ec"></div>
+          <div
+            class="d-flex flex-wrap justify-content-between align-items-center"
+          >
+            <div class="d-flex flex-wrap gap-4">
+              <a href="">Kontakt</a>
+              <a href="">Instagram</a>
+              <a href="">Facebook</a>
+              <a href="">LinkedIn</a>
+            </div>
+            <div class="d-flex flex-wrap gap-4">
+              <a href="tel:+000000000">000-000-000</a>
+              <a href="mailto:giarddesign@kontakt.pl">giarddesign@kontakt.pl</a>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="d-flex flex-wrap justify-content-between">
+            <span>Prawa zastrzeżone © 2022</span>
+            <div class="">
+              <span>made by</span>
+              <img src="/images/logo-author.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
