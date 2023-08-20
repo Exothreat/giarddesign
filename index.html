@@ -111,15 +111,13 @@
     <section id="intro">
       <div class="container-fluid bg-primary">
         <div class="row align-items-center flex-wrap-reverse">
-          <div
-            class="col-lg-6 container py-5"
-            data-aos="fade-right"
-            data-aos-duration="800"
-            data-aos-once="true"
-          >
+          <div class="col-lg-6 container py-5">
             <div
               class="d-flex flex-column justify-content-between mx-auto"
               style="max-width: 500px; min-height: 448px"
+              data-aos="fade-right"
+              data-aos-duration="800"
+              data-aos-once="true"
             >
               <h1
                 style="font-size: 60px; font-family: 'Montserrat', sans-serif"
@@ -160,11 +158,13 @@
             id="carouselSlide"
             class="col-lg-6 px-0 carousel slide"
             data-bs-ride="carousel"
-            data-aos="fade-left"
-            data-aos-duration="800"
-            data-aos-once="true"
           >
-            <div class="carousel-inner">
+            <div
+              class="carousel-inner"
+              data-aos="fade-left"
+              data-aos-duration="800"
+              data-aos-once="true"
+            >
               <div class="carousel-item active">
                 <img src="images/main-bg.jpg" alt="" class="d-block w-100" />
               </div>
@@ -339,12 +339,7 @@
             data-aos-duration="800"
             data-aos-once="true"
           ></div>
-          <div
-            class="container col-lg-6 py-5"
-            data-aos="fade-left"
-            data-aos-duration="800"
-            data-aos-once="true"
-          >
+          <div class="container col-lg-6 py-5">
             <div
               class="d-flex flex-column justify-content-between mx-auto"
               style="max-width: 500px; min-height: 450px"
@@ -406,87 +401,150 @@
             </div>
           </div>
         </div>
-        <div>
-          <div
-            class="grid"
-            data-masonry='{"itemSelector": ".grid-item", "isFitWidth": true}'
+
+        <div
+          class="grid"
+          data-masonry='{"itemSelector": ".grid-item", "isFitWidth": true}'
+        >
+          <button type="button" class="button-gallery btn btn-outline-dark">
+            Rozwiń <i class="bi bi-arrow-down"></i>
+          </button>
+          <div class="grid-overlay"></div>
+          <div class="grid-item">
+            <img
+              src="images/gallery/gallery-1.jpg"
+              alt=""
+              onclick="openGallery(this)"
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="images/gallery/gallery-2.jpg"
+              alt=""
+              onclick="openGallery(this)"
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="images/gallery/gallery-3.jpg"
+              alt=""
+              onclick="openGallery(this)"
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="images/gallery/gallery-4.jpg"
+              alt=""
+              onclick="openGallery(this)"
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="images/gallery/gallery-5.jpg"
+              alt=""
+              onclick="openGallery(this)"
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="images/gallery/gallery-6.jpg"
+              alt=""
+              onclick="openGallery(this)"
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="images/gallery/gallery-7.jpg"
+              alt=""
+              onclick="openGallery(this)"
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="images/gallery/gallery-8.jpg"
+              alt=""
+              onclick="openGallery(this)"
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="images/gallery/gallery-9.jpg"
+              alt=""
+              onclick="openGallery(this)"
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="images/gallery/gallery-1.jpg"
+              alt=""
+              onclick="openGallery(this)"
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="images/gallery/gallery-2.jpg"
+              alt=""
+              onclick="openGallery(this)"
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="images/gallery/gallery-3.jpg"
+              alt=""
+              onclick="openGallery(this)"
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="images/gallery/gallery-4.jpg"
+              alt=""
+              onclick="openGallery(this)"
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="images/gallery/gallery-5.jpg"
+              alt=""
+              onclick="openGallery(this)"
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="images/gallery/gallery-6.jpg"
+              alt=""
+              onclick="openGallery(this)"
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="images/gallery/gallery-7.jpg"
+              alt=""
+              onclick="openGallery(this)"
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="images/gallery/gallery-8.jpg"
+              alt=""
+              onclick="openGallery(this)"
+            />
+          </div>
+          <div class="grid-item">
+            <img
+              src="images/gallery/gallery-9.jpg"
+              alt=""
+              onclick="openGallery(this)"
+            />
+          </div>
+        </div>
+        <div class="photoView">
+          <span
+            class="closeBtn px-2"
+            onclick="this.parentElement.style.display='none'"
           >
-            <div class="grid-item">
-              <img
-                src="images/gallery/gallery-1.jpg"
-                alt=""
-                onclick="openGallery(this)"
-              />
-            </div>
-            <div class="grid-item">
-              <img
-                src="images/gallery/gallery-2.jpg"
-                alt=""
-                onclick="openGallery(this)"
-              />
-            </div>
-            <div class="grid-item">
-              <img
-                src="images/gallery/gallery-3.jpg"
-                alt=""
-                onclick="openGallery(this)"
-              />
-            </div>
-            <div class="grid-item">
-              <img
-                src="images/gallery/gallery-4.jpg"
-                alt=""
-                onclick="openGallery(this)"
-              />
-            </div>
-            <div class="grid-item">
-              <img
-                src="images/gallery/gallery-5.jpg"
-                alt=""
-                onclick="openGallery(this)"
-              />
-            </div>
-            <div class="grid-item">
-              <img
-                src="images/gallery/gallery-6.jpg"
-                alt=""
-                onclick="openGallery(this)"
-              />
-            </div>
-            <div class="grid-item">
-              <img
-                src="images/gallery/gallery-7.jpg"
-                alt=""
-                onclick="openGallery(this)"
-              />
-            </div>
-            <div class="grid-item">
-              <img
-                src="images/gallery/gallery-8.jpg"
-                alt=""
-                onclick="openGallery(this)"
-              />
-            </div>
-            <div class="grid-item">
-              <img
-                src="images/gallery/gallery-9.jpg"
-                alt=""
-                onclick="openGallery(this)"
-              />
-            </div>
-            <button type="button" class="button-gallery btn btn-outline-dark">
-              Rozwiń <i class="bi bi-arrow-down"></i>
-            </button>
-          </div>
-          <div class="photoView">
-            <span
-              class="closeBtn px-2"
-              onclick="this.parentElement.style.display='none'"
-            >
-              <i class="bi bi-x"></i>
-            </span>
-            <img class="photoView__image" id="expandedImg" />
-          </div>
+            <i class="bi bi-x"></i>
+          </span>
+          <img class="photoView__image" id="expandedImg" />
         </div>
       </div>
     </section>
@@ -511,6 +569,9 @@
                 font-size: 40px;
                 font-family: 'Montserrat', sans-serif;
               "
+              data-aos="fade-up"
+              data-aos-duration="800"
+              data-aos-once="true"
             >
               <span>
                 Zostańmy w kontakcie! Znajdziesz nas&nbsp;na
@@ -534,6 +595,10 @@
             <div
               class="d-flex flex-column justify-content-between px-0"
               style="width: 165px; min-height: 118px"
+              data-aos="fade-left"
+              data-aos-duration="800"
+              data-aos-once="true"
+              data-aos-delay="400"
             >
               <span> Śledź nasze najnowsze realizacje! </span>
               <a href="https://www.instagram.com" target="_blank">

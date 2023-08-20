@@ -1,10 +1,12 @@
 .grid {
   display: grid;
-  gap: 20px;
   margin: 0 auto;
+  max-height: 1510px;
+  overflow: hidden;
 }
 
 .grid-item {
+  margin: 21px;
   max-width: 450px;
   cursor: zoom-in;
 }
@@ -13,8 +15,23 @@
   max-width: 450px;
 }
 
-.button-gallery {
+@media (max-width: 500px) {
+  .grid-item img {
+    max-width: 300px;
+  }
+}
+
+.grid-overlay {
   position: relative;
+  height: 900px;
+  top: 610px;
+  pointer-events: none;
+  background: linear-gradient(#dcc1ab00, #dcc1ab);
+  z-index: 10;
+}
+
+.button-gallery {
+  position: absolute;
   left: 50%;
   top: 93%;
   transform: translate(-50%);
