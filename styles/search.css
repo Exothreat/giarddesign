@@ -1,4 +1,4 @@
-.search__container {
+.search-container {
   position: relative;
   width: 40px;
   display: flex;
@@ -7,11 +7,11 @@
   overflow: hidden;
 }
 
-.search__container.active {
-  width: 320px;
+.search-container.active {
+  width: 280px;
 }
 
-.search {
+.search-button {
   position: relative;
   min-width: 40px;
   display: flex;
@@ -22,22 +22,22 @@
   transition: 0.3s;
 }
 
-.search:hover {
+.search-button:hover {
   color: white;
   background-color: #1b5b31;
   border-radius: 2rem;
 }
 
-.search__input {
+.search-input {
   height: 100%;
   display: flex;
 }
 
-.search__close {
+.search-close {
+  position: relative;
   background-color: #1b5b31;
   border-radius: 2rem;
   color: white;
-  position: relative;
   min-width: 40px;
   display: flex;
   justify-content: center;
@@ -45,6 +45,6 @@
   cursor: pointer;
 }
 
-.search__close:hover {
+.search-close:hover {
   background-color: #237640;
 }
