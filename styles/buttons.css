@@ -24,11 +24,11 @@
 
 .btn-outline-secondary:hover {
   color: #f5f0ec;
-  background-color: #1b5b31;
+  background-color: #29894b;
 }
 
 .btn-outline-secondary:active {
-  background-color: #29894b !important;
+  background-color: #216e3c !important;
 }
 
 .btn-light {
@@ -67,4 +67,22 @@
 .btn-link:hover {
   color: #29894b;
   transform: scale(1.1);
+}
+
+.btn-outline-dark {
+  color: #111;
+}
+
+.btn-outline-dark:hover {
+  background-color: #111;
+}
+
+.btn:hover {
+  animation: bounce-button 1s infinite;
+}
+
+@keyframes bounce-button {
+  50% {
+    transform: scale(0.9, 1.1);
+  }
 }

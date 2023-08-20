@@ -68,3 +68,9 @@ body {
     transform: scale(1, 1);
   }
 }
+
+@media (max-width: 705px) {
+  .line {
+    margin: 30px 0;
+  }
+}

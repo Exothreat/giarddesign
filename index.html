@@ -110,7 +110,7 @@
     </header>
     <section id="intro">
       <div class="container-fluid bg-primary">
-        <div class="row align-items-center">
+        <div class="row align-items-center flex-wrap-reverse">
           <div
             class="col-lg-6 container py-5"
             data-aos="fade-right"
@@ -145,7 +145,10 @@
                   <div class="col">
                     <a href="#realizacje">
                       <button type="button" class="btn btn-outline-secondary">
-                        Zobacz nasze realizacje <i class="bi bi-arrow-down"></i>
+                        Zobacz nasze realizacje
+                        <span class="arrow"
+                          ><i class="bi bi-arrow-down"></i
+                        ></span>
                       </button>
                     </a>
                   </div>
@@ -404,74 +407,77 @@
           </div>
         </div>
         <div>
-          <ul
+          <div
             class="grid"
-            data-masonry='{"itemSelector": ".grid-item", "columnWidth": 100}'
+            data-masonry='{"itemSelector": ".grid-item", "isFitWidth": true}'
           >
-            <li class="grid-item">
+            <div class="grid-item">
               <img
                 src="images/gallery/gallery-1.jpg"
                 alt=""
                 onclick="openGallery(this)"
               />
-            </li>
-            <li class="grid-item">
+            </div>
+            <div class="grid-item">
               <img
                 src="images/gallery/gallery-2.jpg"
                 alt=""
                 onclick="openGallery(this)"
               />
-            </li>
-            <li class="grid-item">
+            </div>
+            <div class="grid-item">
               <img
                 src="images/gallery/gallery-3.jpg"
                 alt=""
                 onclick="openGallery(this)"
               />
-            </li>
-            <li class="grid-item">
+            </div>
+            <div class="grid-item">
               <img
                 src="images/gallery/gallery-4.jpg"
                 alt=""
                 onclick="openGallery(this)"
               />
-            </li>
-            <li class="grid-item">
+            </div>
+            <div class="grid-item">
               <img
                 src="images/gallery/gallery-5.jpg"
                 alt=""
                 onclick="openGallery(this)"
               />
-            </li>
-            <li class="grid-item">
+            </div>
+            <div class="grid-item">
               <img
                 src="images/gallery/gallery-6.jpg"
                 alt=""
                 onclick="openGallery(this)"
               />
-            </li>
-            <li class="grid-item">
+            </div>
+            <div class="grid-item">
               <img
                 src="images/gallery/gallery-7.jpg"
                 alt=""
                 onclick="openGallery(this)"
               />
-            </li>
-            <li class="grid-item">
+            </div>
+            <div class="grid-item">
               <img
                 src="images/gallery/gallery-8.jpg"
                 alt=""
                 onclick="openGallery(this)"
               />
-            </li>
-            <li class="grid-item">
+            </div>
+            <div class="grid-item">
               <img
                 src="images/gallery/gallery-9.jpg"
                 alt=""
                 onclick="openGallery(this)"
               />
-            </li>
-          </ul>
+            </div>
+            <button type="button" class="button-gallery btn btn-outline-dark">
+              Rozwiń <i class="bi bi-arrow-down"></i>
+            </button>
+          </div>
           <div class="photoView">
             <span
               class="closeBtn px-2"
@@ -539,16 +545,21 @@
       </div>
     </section>
     <footer id="footer" class="bg-dark">
-      <div class="container" style="max-width: 1040px; padding: 80px 0">
+      <div class="container" style="max-width: 1040px; padding: 80px 12px">
         <div
           class="d-flex flex-column justify-content-between"
           style="height: 195px; margin-bottom: 120px"
         >
-          <div class="d-flex justify-content-between align-items-center">
+          <div
+            class="d-flex flex-wrap gap-4 justify-content-between align-items-center"
+          >
             <a href="#header">
               <img src="images/logo-light.svg" alt="Logo firmy giarddesign" />
             </a>
-            <div class="d-flex align-items-center gap-4">
+            <div
+              class="d-flex flex-wrap align-items-center justify-content-between gap-4"
+              style="width: 522px"
+            >
               <span>Daj znać, co możemy dla Ciebie zrobić!</span>
               <button type="button" class="btn btn-secondary">
                 Skontaktuj się z nami
@@ -557,7 +568,7 @@
           </div>
           <div class="line" style="border-bottom: 1px solid #f5f0ec"></div>
           <div
-            class="d-flex justify-content-between align-items-center"
+            class="d-flex flex-wrap gap-4 justify-content-between align-items-center"
             style="font-size: 14px"
           >
             <div class="d-flex justify-content-between" style="width: 379px">
@@ -573,7 +584,7 @@
           </div>
         </div>
         <div>
-          <div class="d-flex justify-content-between">
+          <div class="d-flex flex-wrap justify-content-between gap-4">
             <span>Prawa zastrzeżone © 2022</span>
             <div class="">
               <span>made by</span>
