@@ -15,7 +15,7 @@
 }
 
 .btn-secondary:active {
-  background-color: #1b5b31;
+  background-color: #216e3c !important;
 }
 
 .btn-outline-secondary {
@@ -41,6 +41,10 @@
   background-color: #bbb9b8;
 }
 
+.btn-light:active {
+  color: #1b5b31 !important;
+}
+
 .btn-outline-light {
   color: #f5f0ec;
 }
@@ -48,6 +52,10 @@
 .btn-outline-light:hover {
   color: #1b5b31;
   background-color: #f5f0ec;
+}
+
+.btn-outline-light:active {
+  color: #1b5b31 !important;
 }
 
 .btn-link {

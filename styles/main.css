@@ -20,6 +20,16 @@ body {
   color: #f5f0ec;
 }
 
+.bg-dark a {
+  color: #f5f0ec;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.bg-dark a:hover {
+  color: #dcc1ab;
+}
+
 .title {
   padding: 0 200px;
 }
