@@ -45,3 +45,26 @@ body {
   height: 737px;
   object-position: right;
 }
+
+.ig-animation {
+  position: relative;
+}
+.ig-animation span {
+  position: relative;
+  display: inline-block;
+  animation: bounce 1.5s infinite;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes bounce {
+  0% {
+    transform: scale(1, 1);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-5px);
+    color: #eea86f;
+  }
+  60% {
+    transform: scale(1, 1);
+  }
+}
