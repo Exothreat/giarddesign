@@ -1,3 +1,8 @@
+.grid {
+  padding: 0;
+  margin-bottom: 0;
+}
+
 .grid-item {
   list-style: none;
   margin-bottom: 42px;

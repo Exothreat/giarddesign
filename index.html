@@ -38,7 +38,7 @@
       defer
       src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"
     ></script>
-    <script defer src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="scripts/search.js"></script>
     <script defer src="scripts/gallery.js"></script>
   </head>
@@ -111,7 +111,12 @@
     <section id="intro">
       <div class="container-fluid bg-primary">
         <div class="row align-items-center">
-          <div class="col-lg-6 container py-5">
+          <div
+            class="col-lg-6 container py-5"
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-once="true"
+          >
             <div
               class="d-flex flex-column justify-content-between mx-auto"
               style="max-width: 500px; min-height: 448px"
@@ -152,6 +157,9 @@
             id="carouselSlide"
             class="col-lg-6 px-0 carousel slide"
             data-bs-ride="carousel"
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-once="true"
           >
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -205,6 +213,10 @@
           <div
             class="d-flex flex-column justify-content-between"
             style="max-width: 720px; min-height: 193px"
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-easing="ease-out"
+            data-aos-once="true"
           >
             <div>
               <nav style="font-size: 12px; color: #1b5b31">Oferta</nav>
@@ -234,61 +246,77 @@
           </div>
         </div>
         <div class="d-flex flex-wrap justify-content-around">
-          <div class="card border-0 aos-init" data-aos="fade-up">
-            <div class="card-icon">
-              <img
-                src="images/projects-icon.png"
-                class="card-img-top"
-                alt="..."
-              />
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Projekty</h3>
-              <p class="card-text">
-                Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
-                wykorzystaniem istniejącej przestrzeni.
-              </p>
-              <button class="btn btn-link">
-                Dowiedz się więcej <i class="bi bi-arrow-right"></i>
-              </button>
-            </div>
-          </div>
-          <div class="card border-0">
-            <div class="card-icon">
-              <img
-                src="images/visualization-icon.png"
-                class="card-img-top"
-                alt="..."
-              />
-            </div>
-            <div class="card-body">
-              <h3 class="card-title">Wizualizacje</h3>
-              <p class="card-text">
-                Przedstawimy Ci projekty koncepcyjne w&nbsp;postaci wirtualnego
-                spaceru animowanego w technologii 3D.
-              </p>
-              <button class="btn btn-link">
-                Dowiedz się więcej <i class="bi bi-arrow-right"></i>
-              </button>
+          <div data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
+            <div class="card border-0">
+              <div class="card-icon">
+                <img
+                  src="images/projects-icon.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Projekty</h3>
+                <p class="card-text">
+                  Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym
+                  wykorzystaniem istniejącej przestrzeni.
+                </p>
+                <button class="btn btn-link">
+                  Dowiedz się więcej <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="card border-0">
-            <div class="card-icon">
-              <img
-                src="images/realization-icon.png"
-                class="card-img-top"
-                alt="..."
-              />
+          <div
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="300"
+            data-aos-once="true"
+          >
+            <div class="card border-0">
+              <div class="card-icon">
+                <img
+                  src="images/visualization-icon.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Wizualizacje</h3>
+                <p class="card-text">
+                  Przedstawimy Ci projekty koncepcyjne w&nbsp;postaci
+                  wirtualnego spaceru animowanego w technologii 3D.
+                </p>
+                <button class="btn btn-link">
+                  Dowiedz się więcej <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
             </div>
-            <div class="card-body">
-              <h3 class="card-title">Realizacje</h3>
-              <p class="card-text">
-                Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i
-                zaawansowanych technologii.
-              </p>
-              <button class="btn btn-link">
-                Zobacz nasze realizacje <i class="bi bi-arrow-right"></i>
-              </button>
+          </div>
+          <div
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="600"
+            data-aos-once="true"
+          >
+            <div class="card border-0">
+              <div class="card-icon">
+                <img
+                  src="images/realization-icon.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Realizacje</h3>
+                <p class="card-text">
+                  Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań
+                  i zaawansowanych technologii.
+                </p>
+                <button class="btn btn-link">
+                  Zobacz nasze realizacje <i class="bi bi-arrow-right"></i>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -304,8 +332,16 @@
               height: 720px;
               background-size: cover;
             "
+            data-aos="fade-right"
+            data-aos-duration="800"
+            data-aos-once="true"
           ></div>
-          <div class="container col-lg-6 py-5">
+          <div
+            class="container col-lg-6 py-5"
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-once="true"
+          >
             <div
               class="d-flex flex-column justify-content-between mx-auto"
               style="max-width: 500px; min-height: 450px"
@@ -345,6 +381,9 @@
           <div
             class="d-flex flex-column justify-content-between"
             style="min-height: 89px; margin-bottom: 96px"
+            data-aos="fade-left"
+            data-aos-duration="800"
+            data-aos-once="true"
           >
             <div>
               <nav style="font-size: 12px; color: #1b5b31">Realizacje</nav>
@@ -469,7 +508,9 @@
             >
               <span>
                 Zostańmy w kontakcie! Znajdziesz nas&nbsp;na
-                <i style="font-weight: 500">Instagramie.</i>
+                <span style="font-weight: 500; font-style: italic"
+                  >Instagramie.</span
+                >
               </span>
             </div>
             <div
@@ -532,5 +573,8 @@
         </div>
       </div>
     </footer>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
