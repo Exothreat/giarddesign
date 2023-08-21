@@ -1,6 +1,6 @@
 .grid {
   margin: 0 auto;
-  padding-bottom: 70px;
+  padding-bottom: 90px;
   max-height: 1510px;
   overflow: hidden;
 }
@@ -10,13 +10,12 @@
 }
 
 .grid-item {
-  margin: 21px;
-  max-width: 450px;
+  margin-bottom: 42px;
   cursor: zoom-in;
 }
 
 .grid-item img {
-  max-width: 450px;
+  max-width: 451px;
   transition: 0.3s;
 }
 
