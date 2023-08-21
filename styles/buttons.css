@@ -77,6 +77,34 @@
   background-color: #111;
 }
 
+.scroll-to-top {
+  visibility: hidden;
+  background-color: #216e3c;
+  color: #fff;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  z-index: 100;
+  transition: 0.2s;
+}
+
+.scroll-to-top:hover {
+  background-color: #29894b;
+  transform: scale(1.2);
+}
+
+.scroll-visible {
+  visibility: visible;
+}
+
 .btn:hover {
   animation: bounce-button 1s infinite;
 }
