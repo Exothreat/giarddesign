@@ -1,0 +1,18 @@
+.popup {
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 10px;
+  background-color: #111;
+  color: white;
+  text-align: center;
+  font-weight: 400;
+  font-size: 15px;
+  max-width: 150px;
+  border-radius: 20px;
+}
+
+.popup__visible {
+  visibility: visible;
+}
