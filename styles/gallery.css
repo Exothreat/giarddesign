@@ -1,9 +1,12 @@
 .grid {
-  display: grid;
   margin: 0 auto;
   padding-bottom: 70px;
   max-height: 1510px;
   overflow: hidden;
+}
+
+.expand-grid {
+  max-height: fit-content;
 }
 
 .grid-item {
@@ -29,20 +32,27 @@
   pointer-events: none;
   background: linear-gradient(#dcc1ab00, #dcc1ab);
   z-index: 10;
+  transition: 0.3s;
+}
+
+.hidden {
+  opacity: 0;
 }
 
 .more-gallery-button {
   position: absolute;
   left: 50%;
-  bottom: 50px;
+  bottom: 80px;
   transform: translate(-50%);
+  width: 150px;
   animation: none !important;
   z-index: 20;
+  transition: 0.3s;
 }
 
 .less-gallery-button {
-  display: none;
   position: absolute;
+  width: 150px;
   left: 50%;
   bottom: 20px;
   transform: translate(-50%);

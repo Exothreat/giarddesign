@@ -116,8 +116,6 @@
               class="d-flex flex-column justify-content-between mx-auto"
               style="max-width: 500px; min-height: 448px"
               data-aos="fade-right"
-              data-aos-duration="800"
-              data-aos-once="true"
             >
               <h1
                 style="font-size: 60px; font-family: 'Montserrat', sans-serif"
@@ -159,12 +157,7 @@
             class="col-lg-6 px-0 carousel slide"
             data-bs-ride="carousel"
           >
-            <div
-              class="carousel-inner"
-              data-aos="fade-left"
-              data-aos-duration="800"
-              data-aos-once="true"
-            >
+            <div class="carousel-inner" data-aos="fade-up">
               <div class="carousel-item active">
                 <img src="images/main-bg.jpg" alt="" class="d-block w-100" />
               </div>
@@ -217,9 +210,6 @@
             class="d-flex flex-column justify-content-between"
             style="max-width: 720px; min-height: 193px"
             data-aos="fade-right"
-            data-aos-duration="800"
-            data-aos-easing="ease-out"
-            data-aos-once="true"
           >
             <div>
               <nav style="font-size: 12px; color: #1b5b31">Oferta</nav>
@@ -249,9 +239,9 @@
           </div>
         </div>
         <div class="d-flex flex-wrap justify-content-around">
-          <div data-aos="fade-up" data-aos-duration="800" data-aos-once="true">
-            <div class="card border-0">
-              <div class="card-icon">
+          <div data-aos="fade-up">
+            <a href="#projekty" class="card border-0">
+              <div class="pencil card-icon">
                 <img
                   src="images/projects-icon.png"
                   class="card-img-top"
@@ -268,16 +258,11 @@
                   Dowiedz się więcej <i class="bi bi-arrow-right"></i>
                 </button>
               </div>
-            </div>
+            </a>
           </div>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="300"
-            data-aos-once="true"
-          >
-            <div class="card border-0">
-              <div class="card-icon">
+          <div data-aos="fade-up" data-aos-delay="200">
+            <a href="#wizualizacje" class="card border-0">
+              <div class="eye card-icon">
                 <img
                   src="images/visualization-icon.png"
                   class="card-img-top"
@@ -294,16 +279,11 @@
                   Dowiedz się więcej <i class="bi bi-arrow-right"></i>
                 </button>
               </div>
-            </div>
+            </a>
           </div>
-          <div
-            data-aos="fade-up"
-            data-aos-duration="800"
-            data-aos-delay="600"
-            data-aos-once="true"
-          >
-            <div class="card border-0">
-              <div class="card-icon">
+          <div data-aos="fade-up" data-aos-delay="400">
+            <a href="#realizacje" class="card border-0">
+              <div class="stars card-icon">
                 <img
                   src="images/realization-icon.png"
                   class="card-img-top"
@@ -320,7 +300,7 @@
                   Zobacz nasze realizacje <i class="bi bi-arrow-right"></i>
                 </button>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>
@@ -336,13 +316,13 @@
               background-size: cover;
             "
             data-aos="fade-right"
-            data-aos-duration="800"
-            data-aos-once="true"
           ></div>
           <div class="container col-lg-6 py-5">
             <div
               class="d-flex flex-column justify-content-between mx-auto"
               style="max-width: 500px; min-height: 450px"
+              data-aos="fade-up"
+              data-aos-delay="300"
             >
               <div>
                 <nav style="font-size: 12px">O firmie</nav>
@@ -379,9 +359,7 @@
           <div
             class="d-flex flex-column justify-content-between"
             style="min-height: 89px; margin-bottom: 96px"
-            data-aos="fade-left"
-            data-aos-duration="800"
-            data-aos-once="true"
+            data-aos="fade-right"
           >
             <div>
               <nav style="font-size: 12px; color: #1b5b31">Realizacje</nav>
@@ -404,6 +382,7 @@
         <div
           class="grid"
           data-masonry='{"itemSelector": ".grid-item", "isFitWidth": true}'
+          data-aos="fade-up"
         >
           <button
             type="button"
@@ -411,7 +390,7 @@
           >
             Rozwiń <i class="bi bi-arrow-down"></i>
           </button>
-          <button type="button" class="less-gallery-button btn btn-dark">
+          <button type="button" class="less-gallery-button hidden btn btn-dark">
             Zwiń <i class="bi bi-arrow-up"></i>
           </button>
           <div class="grid-overlay"></div>
@@ -575,8 +554,6 @@
                 font-family: 'Montserrat', sans-serif;
               "
               data-aos="fade-up"
-              data-aos-duration="800"
-              data-aos-once="true"
             >
               <span>
                 Zostańmy w kontakcie! Znajdziesz nas&nbsp;na
@@ -601,8 +578,6 @@
               class="d-flex flex-column justify-content-between px-0"
               style="width: 165px; min-height: 118px"
               data-aos="fade-left"
-              data-aos-duration="800"
-              data-aos-once="true"
               data-aos-delay="400"
             >
               <span> Śledź nasze najnowsze realizacje! </span>
@@ -667,7 +642,11 @@
       </div>
     </footer>
     <script>
-      AOS.init();
+      AOS.init({
+        duration: 800,
+        once: true,
+        startEvent: "load",
+      });
     </script>
   </body>
 </html>

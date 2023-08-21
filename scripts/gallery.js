@@ -17,15 +17,15 @@ const overlay = document.querySelector(".grid-overlay");
 const lessBtn = document.querySelector(".less-gallery-button");
 
 moreBtn.addEventListener("click", () => {
-  gallery.style.maxHeight = "none";
-  overlay.style.display = "none";
-  moreBtn.style.display = "none";
-  lessBtn.style.display = "block";
+  overlay.classList.add("hidden");
+  moreBtn.classList.add("hidden");
+  gallery.classList.add("expand-grid");
+  lessBtn.classList.remove("hidden");
 });
 
 lessBtn.addEventListener("click", () => {
-  gallery.style.maxHeight = "1510px";
-  overlay.style.display = "block";
-  lessBtn.style.display = "none";
-  moreBtn.style.display = "block";
+  overlay.classList.remove("hidden");
+  moreBtn.classList.remove("hidden");
+  gallery.classList.remove("expand-grid");
+  lessBtn.classList.add("hidden");
 });

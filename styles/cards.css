@@ -4,6 +4,7 @@
   margin: 20px;
   border-radius: 28px;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 .card:hover,
@@ -29,4 +30,61 @@
 .card-text {
   font-size: 14px;
   margin-bottom: 40px;
+}
+
+.card:hover .eye img {
+  animation: close-eye 1s 2;
+}
+
+.card:hover .pencil img {
+  animation: move-pencil 1s 2;
+}
+
+.card:hover .stars img {
+  animation: move-stars 1s 2;
+}
+
+@keyframes move-pencil {
+  30% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(0deg);
+  }
+  55% {
+    transform: rotate(-10deg);
+  }
+  70% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes close-eye {
+  30% {
+    transform: scale(1, 1);
+  }
+  40% {
+    transform: scale(1, 0.1);
+  }
+  55% {
+    transform: scale(1, 1);
+  }
+  70% {
+    transform: scale(1, 0.1);
+  }
+  90% {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes move-stars {
+  20% {
+    transform: scale(0.9) rotate(10deg) translate(-2px);
+  }
+  40% {
+    transform: scale(1.1) rotate(-10deg);
+  }
+  60% {
+    transform: scale(1) rotate(-10deg);
+  }
 }

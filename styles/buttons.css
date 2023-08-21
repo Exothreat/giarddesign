@@ -82,7 +82,13 @@
 }
 
 @keyframes bounce-button {
-  50% {
+  40% {
+    transform: scale(0.9, 1.1);
+  }
+  60% {
+    transform: scale(1, 1);
+  }
+  70% {
     transform: scale(0.9, 1.1);
   }
 }
