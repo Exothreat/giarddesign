@@ -45,7 +45,9 @@
 }
 
 .card:hover .stars img {
+  transition: 0.3s;
   background-image: url(/images/realization.gif);
+  transform: scale(1.1);
 }
 
 @keyframes move-pencil {
