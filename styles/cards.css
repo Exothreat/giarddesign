@@ -45,9 +45,7 @@
 }
 
 .card:hover .stars img {
-  transition: 0.3s;
-  background-image: url(/images/realization.gif);
-  transform: scale(1.1);
+  animation: move-stars 1s 2;
 }
 
 @keyframes move-pencil {
@@ -78,19 +76,22 @@
   70% {
     transform: scale(1, 0.1);
   }
-  90% {
+  85% {
     transform: scale(1, 1);
   }
 }
 
-/* @keyframes move-stars {
-  20% {
-    transform: scale(0.9) rotate(10deg) translate(-2px);
+@keyframes move-stars {
+  25% {
+    transform: scale(1.2, 0.2);
   }
-  40% {
-    transform: scale(1.1) rotate(-10deg);
+  50% {
+    transform: scale(1, 1);
   }
-  60% {
-    transform: scale(1) rotate(-10deg);
+  75% {
+    transform: scale(0.5, 1.2);
   }
-} */
+  100% {
+    transform: scale(1, 1);
+  }
+}
