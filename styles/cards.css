@@ -32,6 +32,10 @@
   margin-bottom: 40px;
 }
 
+.card-text button {
+  animation: none !important;
+}
+
 .card:hover .eye img {
   animation: close-eye 1s 2;
 }
@@ -41,7 +45,7 @@
 }
 
 .card:hover .stars img {
-  animation: move-stars 1s 2;
+  background-image: url(/images/realization.gif);
 }
 
 @keyframes move-pencil {
@@ -77,7 +81,7 @@
   }
 }
 
-@keyframes move-stars {
+/* @keyframes move-stars {
   20% {
     transform: scale(0.9) rotate(10deg) translate(-2px);
   }
@@ -87,4 +91,4 @@
   60% {
     transform: scale(1) rotate(-10deg);
   }
-}
+} */

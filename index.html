@@ -41,6 +41,7 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script defer src="scripts/search.js"></script>
     <script defer src="scripts/gallery.js"></script>
+    <script defer src="scripts/aos.js"></script>
   </head>
   <body>
     <header id="header">
@@ -115,14 +116,20 @@
             <div
               class="d-flex flex-column justify-content-between mx-auto"
               style="max-width: 500px; min-height: 448px"
-              data-aos="fade-right"
             >
               <h1
                 style="font-size: 60px; font-family: 'Montserrat', sans-serif"
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-offset="-20"
               >
                 Nowoczesna aranżacja Twojego ogrodu
               </h1>
-              <div>
+              <div
+                data-aos="fade-down"
+                data-aos-offset="-50"
+                data-aos-delay="400"
+              >
                 <span>
                   Marka GiardDesign to wieloletnie doświadczenie i&nbsp;wysoka
                   estetyka realizacji. Oferujemy kompleksowy zakres usług
@@ -131,14 +138,24 @@
               </div>
               <div style="margin-top: 30px">
                 <div class="row">
-                  <div class="col">
+                  <div
+                    class="col"
+                    data-aos="fade-left"
+                    data-aos-offset="-80"
+                    data-aos-delay="400"
+                  >
                     <a href="#realizacje">
                       <button type="button" class="btn btn-secondary">
                         Skontaktuj się z&nbsp;nami
                       </button>
                     </a>
                   </div>
-                  <div class="col">
+                  <div
+                    class="col"
+                    data-aos="fade-right"
+                    data-aos-offset="-80"
+                    data-aos-delay="400"
+                  >
                     <a href="#realizacje">
                       <button type="button" class="btn btn-outline-secondary">
                         Zobacz nasze realizacje
@@ -157,7 +174,7 @@
             class="col-lg-6 px-0 carousel slide"
             data-bs-ride="carousel"
           >
-            <div class="carousel-inner" data-aos="fade-up">
+            <div class="carousel-inner" data-aos="fade-right">
               <div class="carousel-item active">
                 <img src="images/main-bg.jpg" alt="" class="d-block w-100" />
               </div>
@@ -285,7 +302,7 @@
             <a href="#realizacje" class="card border-0">
               <div class="stars card-icon">
                 <img
-                  src="images/realization-icon.png"
+                  src="images/realization-icon-1.png"
                   class="card-img-top"
                   alt="..."
                 />
@@ -641,12 +658,5 @@
         </div>
       </div>
     </footer>
-    <script>
-      AOS.init({
-        duration: 800,
-        once: true,
-        startEvent: "load",
-      });
-    </script>
   </body>
 </html>

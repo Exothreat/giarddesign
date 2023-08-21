@@ -80,3 +80,9 @@ body {
     font-size: 50px !important;
   }
 }
+
+@media (max-width: 450px) {
+  .bg-image {
+    height: 500px;
+  }
+}
