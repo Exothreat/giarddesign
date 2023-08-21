@@ -2,6 +2,10 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 0;
+}
+
 .bg-primary {
   background-color: #dcc1ab !important;
 }
