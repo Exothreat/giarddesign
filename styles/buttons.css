@@ -2,6 +2,11 @@
   height: 50px;
   border-radius: 2rem;
   padding: 0 15px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
 }
 
 .btn-secondary {
@@ -78,7 +83,7 @@
 }
 
 .scroll-to-top {
-  visibility: hidden;
+  opacity: 0;
   background-color: #216e3c;
   color: #fff;
   position: fixed;
@@ -92,8 +97,16 @@
   width: 50px;
   height: 50px;
   border: 1px solid #fff;
-  z-index: 100;
-  transition: 0.2s;
+  pointer-events: none;
+  transition: 0.3s;
+  z-index: 15;
+}
+
+@media (max-width: 767px) {
+  .scroll-to-top {
+    right: 30px;
+    bottom: 30px;
+  }
 }
 
 .scroll-to-top:hover {
@@ -102,21 +115,5 @@
 }
 
 .scroll-visible {
-  visibility: visible;
-}
-
-.btn:hover {
-  animation: bounce-button 1s infinite;
-}
-
-@keyframes bounce-button {
-  40% {
-    transform: scale(0.9, 1.1);
-  }
-  60% {
-    transform: scale(1, 1);
-  }
-  70% {
-    transform: scale(0.9, 1.1);
-  }
+  opacity: 1;
 }

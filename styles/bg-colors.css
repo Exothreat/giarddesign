@@ -1,0 +1,27 @@
+.bg-primary {
+  background-color: #dcc1ab !important;
+}
+
+.bg-secondary {
+  color: #f5f0ec;
+  background-color: #1b5b31 !important;
+}
+
+.bg-success {
+  background-color: #f5f0ec !important;
+}
+
+.bg-dark {
+  background-color: #111 !important;
+  color: #f5f0ec;
+}
+
+.bg-dark a {
+  color: #f5f0ec;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.bg-dark a:hover {
+  color: #dcc1ab;
+}

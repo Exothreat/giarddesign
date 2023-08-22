@@ -1,5 +1,5 @@
 const search = document.querySelector(".search-button");
-const searchClose = document.querySelector(".search-close");
+const searchClose = document.querySelector(".search-close-btn");
 const searchContainer = document.querySelector(".search-container");
 
 search.addEventListener("click", () => {

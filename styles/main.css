@@ -6,34 +6,6 @@ body::-webkit-scrollbar {
   width: 0;
 }
 
-.bg-primary {
-  background-color: #dcc1ab !important;
-}
-
-.bg-secondary {
-  color: #f5f0ec;
-  background-color: #1b5b31 !important;
-}
-
-.bg-success {
-  background-color: #f5f0ec !important;
-}
-
-.bg-dark {
-  background-color: #111 !important;
-  color: #f5f0ec;
-}
-
-.bg-dark a {
-  color: #f5f0ec;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.bg-dark a:hover {
-  color: #dcc1ab;
-}
-
 .title {
   padding: 0 200px;
 }
@@ -50,43 +22,20 @@ body::-webkit-scrollbar {
   object-position: right;
 }
 
-.ig-animation {
-  position: relative;
-}
-.ig-animation span {
-  position: relative;
-  display: inline-block;
-  animation: bounce 1.5s infinite;
-  animation-delay: calc(0.1s * var(--i));
-}
-
-@keyframes bounce {
-  0% {
-    transform: scale(1, 1);
-  }
-  30% {
-    transform: scale(0.9, 1.1) translateY(-5px);
-    color: #eea86f;
-  }
-  60% {
-    transform: scale(1, 1);
-  }
-}
-
 @media (max-width: 705px) {
   .line {
     margin: 30px 0;
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 435px) {
   h1 {
     font-size: 50px !important;
   }
 }
 
 @media (max-width: 450px) {
-  .bg-image {
-    height: 500px;
+  .about-image {
+    height: 450;
   }
 }

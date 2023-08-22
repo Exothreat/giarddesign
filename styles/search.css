@@ -24,7 +24,7 @@
 
 .search-button:hover {
   color: white;
-  background-color: #1b5b31;
+  background-color: #216e3c;
   border-radius: 2rem;
 }
 
@@ -33,9 +33,9 @@
   display: flex;
 }
 
-.search-close {
+.search-close-btn {
   position: relative;
-  background-color: #1b5b31;
+  background-color: #b47a4b;
   border-radius: 2rem;
   color: white;
   min-width: 40px;
@@ -45,6 +45,6 @@
   cursor: pointer;
 }
 
-.search-close:hover {
-  background-color: #237640;
+.search-close-btn:hover {
+  background-color: #c3956f;
 }

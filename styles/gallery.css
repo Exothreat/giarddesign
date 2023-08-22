@@ -12,6 +12,7 @@
 .grid-item {
   margin-bottom: 42px;
   cursor: zoom-in;
+  overflow: hidden;
 }
 
 .grid-item img {
@@ -21,12 +22,12 @@
 
 .grid-item img:hover {
   opacity: 0.8;
-  transform: scale(0.99);
+  transform: scale(1.03);
 }
 
 @media (max-width: 500px) {
   .grid-item img {
-    max-width: 400px;
+    max-width: 380px;
   }
 }
 

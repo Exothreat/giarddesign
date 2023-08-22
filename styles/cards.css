@@ -7,9 +7,9 @@
   text-decoration: none;
 }
 
-.card:hover,
-.card:hover button {
-  transform: scale(1.1);
+.card:hover {
+  transform: scale(1.05);
+  background-color: hsl(27, 50%, 80%);
 }
 
 .card-icon {
@@ -83,13 +83,13 @@
 
 @keyframes move-stars {
   25% {
-    transform: scale(1.2, 0.2);
-  }
-  50% {
     transform: scale(1, 1);
   }
+  50% {
+    transform: scale(1, 0.8);
+  }
   75% {
-    transform: scale(0.5, 1.2);
+    transform: scale(0.8, 1);
   }
   100% {
     transform: scale(1, 1);

@@ -1,25 +1,20 @@
 .nav-link {
   color: #111111;
   border-radius: 2rem;
-  padding-left: 5px;
 }
 
 .nav-link:hover {
   color: white;
-  background-color: #1b5b31;
+  background-color: #216e3c;
   border-radius: 2rem;
 }
 
 .nav-link.show:hover {
   color: white;
-  background-color: #1b5b31;
+  background-color: #216e3c;
 }
 
 .dropdown-item:hover {
   color: white;
-  background-color: #1b5b31;
-}
-
-.dropdown {
-  height: 24px;
+  background-color: #216e3c;
 }
